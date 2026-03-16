@@ -1,0 +1,52 @@
+/* imagem */
+.hero-image img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80vh;
+  gap: 3rem;
+}
+
+/* texto */
+.hero-intro {
+  color: var(--cor-fonte-secundaria);
+  margin-bottom: 0.5rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  color: var(--cor-fonte-secundaria);
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  max-width: 500px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* botões */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background: var(--cor--detalhe);
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+}
+
