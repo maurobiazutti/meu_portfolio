@@ -11,7 +11,8 @@
   --cor-bg-secundaria: #322e2b;
   --cor-fonte-primaria: #ffffff;
   --cor-fonte-secundaria: #ceb372;
-  --cor--detalhe: #e44e2b;
+  --cor-detalhe: #e44e2b;
+  --cor-borda: rgba(255, 255, 255, 0.199);
 
   --fonte-padrao: 'Plus Jakarta Sans', sans-serif;
   
@@ -22,4 +23,34 @@ body {
   font-family: var(--fonte-padrao);
   background-color: var(--cor-bg-principal);
   color: var(--cor-fonte-primaria);
+}
+
+/* BOTÃO DOWNLOAD */
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--cor-detalhe);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: #fff !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transicao);
+}
+
+.btn-download:hover {
+  opacity: 0.8;
+}
+
+/* icone */
+.download-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* HERO */
+.hero-icon {
+  width: 40px;
+  height: 40px;
 }
