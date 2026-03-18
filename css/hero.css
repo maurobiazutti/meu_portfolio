@@ -12,6 +12,8 @@
   justify-content: center;
   min-height: 50vh;
   gap: 2rem;
+  padding: 0 5%;     
+  width: 100%;
 }
 
 /* imagem */
@@ -121,10 +123,6 @@ hr {
     font-size: 20px;
     padding: 0 1rem;
   }
-
-
-
- 
 
   .hero-icon {
     width: 32px;

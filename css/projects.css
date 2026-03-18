@@ -1,0 +1,131 @@
+/* --- SEÇÃO DE PROJETOS --- */
+.projects-section {
+  background-color: var(--cor-bg-secundaria);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.projects {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5%;     
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--cor-fonte-primaria);
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+/* Detalhe sutil abaixo do título */
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: var(--cor-detalhe);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Grid de Cards */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* Estilo do Card Individual */
+.project-card {
+  background-color: var(--cor-bg-principal);
+  border: 1px solid var(--cor-borda);
+  width: 100%;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: transform var(--transicao), border-color var(--transicao);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--cor-fonte-secundaria);
+}
+
+.project-info h3 {
+  font-size: 1.4rem;
+  color: var(--cor-fonte-primaria);
+  margin-bottom: 1rem;
+}
+
+.project-info p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+}
+
+/* Tags de Tecnologias */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-tags span {
+  background: rgba(206, 179, 114, 0.1); /* Cor secundária com transparência */
+  color: var(--cor-fonte-secundaria);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  border: 1px solid rgba(206, 179, 114, 0.2);
+  text-transform: uppercase;
+}
+
+/* Botões do Projeto */
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-links a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: var(--transicao);
+}
+
+.btn-primary {
+  background: var(--cor-detalhe);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.2);
+}
+
+.btn-secondary {
+  color: var(--cor-fonte-primaria);
+  border: 1px solid var(--cor-borda);
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+}
+
+.btn-secondary:hover {
+  background: var(--cor-borda);
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
