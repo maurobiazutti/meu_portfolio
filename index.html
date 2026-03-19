@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/project.css">
   <link rel="stylesheet" href="css/experience.css">
+  <link rel="stylesheet" href="css/slider.css">
 </head>
 
 <body>
@@ -42,7 +43,7 @@
   <section class="hero-main ">
     <div class="hero">
       <div class="hero-image">
-        <img src="imagens/img/img.jpg" alt="Foto Mauro">
+        <img class="photo" src="imagens/img/img.jpg" alt="Foto Mauro">
       </div>
 
       <div class="hero-tex">
@@ -158,73 +159,92 @@
   </section>
 
   <!-- ## EXPERIENCES ## -->
-<section id="experiencia" class="experience-section">
-  <div class="container">
-    <h2 class="section-title">Experiência</h2>
-    
-    <div class="experience-container">
+  <section id="experiencia" class="experience-section">
+    <div class="container">
+      <h2 class="section-title">Experiência</h2>
       
-      <article class="experience-card">
-        <div class="exp-header">
-          <div class="exp-info">
-            <h3>Desenvolvedor Backend</h3>
-            <span class="exp-company">Desafio Técnico - Parser Financeiro</span>
-          </div>
-          <span class="exp-date">Maio 2025 – Junho 2025</span>
-        </div>
+      <div class="experience-container">
         
-        <ul class="exp-bullets">
-          <li>Desenvolvi um parser de arquivos <strong>CNAB</strong> robusto utilizando <strong>Ruby on Rails 8</strong>, garantindo a leitura e persistência de dados financeiros complexos.</li>
-          <li>Implementei validações de integridade no <strong>PostgreSQL</strong> para evitar duplicidade de transações bancárias.</li>
-          <li>Criei uma interface com <strong>Turbo Frames</strong> para visualização em tempo real dos relatórios processados.</li>
-        </ul>
-
-
-         <div class="project-tags">
-            <span>Ruby on Rails 8</span>
-            <span>PostgreSQL</span>
-            <span>Docker</span>
+        <article class="experience-card">
+          <div class="exp-header">
+            <div class="exp-info">
+              <h3>Desenvolvedor Backend</h3>
+              <span class="exp-company">Desafio Técnico - Parser Financeiro</span>
+            </div>
+            <span class="exp-date">Maio 2025 – Junho 2025</span>
           </div>
+          
+          <ul class="exp-bullets">
+            <li>Desenvolvi um parser de arquivos <strong>CNAB</strong> robusto utilizando <strong>Ruby on Rails 8</strong>, garantindo a leitura e persistência de dados financeiros complexos.</li>
+            <li>Implementei validações de integridade no <strong>PostgreSQL</strong> para evitar duplicidade de transações bancárias.</li>
+            <li>Criei uma interface com <strong>Turbo Frames</strong> para visualização em tempo real dos relatórios processados.</li>
+          </ul>
 
-          <div class="project-links">
-            <a href="#" class="btn-download">Ver Código
-              <img src="imagens/icons/github_branco.png" alt="Github Icon" class="download-icon">
-            </a>
+
+          <div class="project-tags">
+              <span>Ruby on Rails 8</span>
+              <span>PostgreSQL</span>
+              <span>Docker</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="btn-download">Ver Código
+                <img src="imagens/icons/github_branco.png" alt="Github Icon" class="download-icon">
+              </a>
+            </div>
+        </article>
+
+        <article class="experience-card">
+          <div class="exp-header">
+            <div class="exp-info">
+              <h3>Full Stack Developer</h3>
+              <span class="exp-company">Projeto E-commerce Autoral</span>
+            </div>
+            <span class="exp-date">Março 2025 – Presente</span>
           </div>
-      </article>
+          
+          <ul class="exp-bullets">
+            <li>Arquiturei o sistema de checkout e gestão de estoque focando em <strong>performance e escalabilidade</strong>.</li>
+            <li>Estilizei componentes reutilizáveis com <strong>Tailwind CSS</strong>, mantendo um design responsivo e acessível.</li>
+            <li>Gerenciei o ambiente de desenvolvimento e testes utilizando <strong>Docker</strong> e <strong>Git</strong>.</li>
+          </ul>
 
-      <article class="experience-card">
-        <div class="exp-header">
-          <div class="exp-info">
-            <h3>Full Stack Developer</h3>
-            <span class="exp-company">Projeto E-commerce Autoral</span>
-          </div>
-          <span class="exp-date">Março 2025 – Presente</span>
-        </div>
-        
-        <ul class="exp-bullets">
-          <li>Arquiturei o sistema de checkout e gestão de estoque focando em <strong>performance e escalabilidade</strong>.</li>
-          <li>Estilizei componentes reutilizáveis com <strong>Tailwind CSS</strong>, mantendo um design responsivo e acessível.</li>
-          <li>Gerenciei o ambiente de desenvolvimento e testes utilizando <strong>Docker</strong> e <strong>Git</strong>.</li>
-        </ul>
+          <div class="project-tags">
+              <span>Ruby on Rails 8</span>
+              <span>PostgreSQL</span>
+              <span>Docker</span>
+            </div>
 
-         <div class="project-tags">
-            <span>Ruby on Rails 8</span>
-            <span>PostgreSQL</span>
-            <span>Docker</span>
-          </div>
+            <div class="project-links">
+              <a href="#" class="btn-download">Ver Código
+                <img src="imagens/icons/github_branco.png" alt="Github Icon" class="download-icon">
+              </a>
+            </div>
+        </article>
 
-          <div class="project-links">
-            <a href="#" class="btn-download">Ver Código
-              <img src="imagens/icons/github_branco.png" alt="Github Icon" class="download-icon">
-            </a>
-          </div>
-      </article>
-
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- ## SLIDER ICONS -->
+<div class="slider-mask" id="sliderMask">
+  <div class="slider-track" id="sliderTrack">
+    <div class="slide"><img src="imagens/icons/linux.png" alt="Linux"></div>
+    <div class="slide"><img src ="imagens/icons/ruby.png" alt="Ruby"></div>
+    <div class="slide"><img src="imagens/icons/rails.png" alt="Rails"></div> <!-- ou rails.png se existir -->
+    <div class="slide"><img src="imagens/icons/postgre.png" alt="PostgreSQL"></div>
+    <div class="slide"><img src="imagens/icons/docker.png" alt="Docker"></div>
+    <div class="slide"><img src="imagens/icons/redis.png" alt="Redis"></div>
+    <div class="slide"><img src="imagens/icons/Sidekiq.png" alt="Sidekiq"></div>
+    <div class="slide"><img src="imagens/icons/js.png" alt="Js"></div>
+    <div class="slide"><img src="imagens/icons/html-5.png" alt="Html-5"></div>
+    <div class="slide"><img src="imagens/icons/css-3.png" alt="CSS3"></div>
+    <div class="slide"><img src="imagens/icons/Tailwind CSS.png" alt="Tailwind"></div>
+    <div class="slide"><img src="imagens/icons/bootstrap.png" alt="Bootstrap"></div>
+    <div class="slide"><img src="imagens/icons/github_branco.png" alt="Github"></div>
+    <div class="slide"><img src="imagens/icons/git.png" alt="Git"></div>
+  </div>
+</div>
 </body>
 
 <script src="js/main.js"></script>

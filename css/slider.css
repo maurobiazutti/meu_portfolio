@@ -1,0 +1,29 @@
+ .slider-mask {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  padding: 2rem 0;
+  cursor: grab; /* Indica que é arrastável */
+}
+
+.slider-track {
+  display: inline-flex;
+  will-change: transform; /* Otimização de performance para o navegador */
+}
+
+.slide {
+  padding: 0 40px; /* Espaçamento entre ícones */
+  user-select: none; /* Impede que o usuário "selecione" a imagem ao arrastar */
+}
+
+.slide img {
+  width: 45px;
+  height: 45px;
+  transition: var(--transicao);
+}
+
+.slide img:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
