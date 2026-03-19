@@ -1,0 +1,106 @@
+/* --- SEÇÃO EXPERIÊNCIA (CARDS) --- */
+.experience-section {
+  background-color: var(--cor-bg-principal);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.container {
+   max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5%; 
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.experience-card {
+  background-color: var(--cor-bg-secundaria);
+  border: 1px solid var(--cor-borda);
+  border-left: 4px solid var(--cor-detalhe); /* Destaque lateral */
+  border-radius: 8px;
+  padding: 2rem;
+  transition: var(--transicao);
+}
+
+.experience-card:hover {
+  transform: translateX(10px); /* Move levemente para a direita no hover */
+  background-color: rgba(50, 46, 43, 0.8);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.exp-info h3 {
+  color: var(--cor-fonte-primaria);
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.exp-company {
+  color: var(--cor-fonte-secundaria);
+  font-weight: 600;
+  font-size: 1rem;
+  display: block;
+}
+
+.exp-date {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+}
+
+/* Lista de conquistas dentro do card */
+.exp-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.exp-bullets li {
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+}
+
+/* Ícone de check ou seta para os itens */
+.exp-bullets li::before {
+  content: "▹"; /* Seta minimalista */
+  color: var(--cor-detalhe);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Destaque para palavras-chave dentro do texto */
+.exp-bullets li strong {
+  color: var(--cor-fonte-primaria);
+  font-weight: 600;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .exp-header {
+    flex-direction: column;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-5px); /* No mobile é melhor subir do que ir pro lado */
+  }
+}
