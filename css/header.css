@@ -43,8 +43,6 @@
   color: var(--cor-fonte-secundaria);
 }
 
-
-
 /* botão hamburger */
 .menu-toggle {
   display: none;
@@ -56,7 +54,6 @@
 }
 
 /* MOBILE */
-
 @media (max-width: 768px) {
 
   .menu-toggle {
